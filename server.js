@@ -23,6 +23,10 @@ app.use("/api/admin", usersRoute);
 // app.use('/api/hotels',hotelsRoute)
 // app.use('/api/rooms',roomsRoute)
 
+app.get("/", (request, response) => {
+    response.send("Hello World");
+});
+
 
 app.listen(process.env.PORT,()=>{
     console.log("server is running..")
